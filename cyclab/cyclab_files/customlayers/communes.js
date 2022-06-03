@@ -2,7 +2,7 @@
 mviewer.customLayers.communes = {};
 mviewer.customLayers.communes.layer = new ol.layer.Vector({
         source: new ol.source.Vector({
-            url: "https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/data/communes.geojson",
+            url: "http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/data/communes.geojson",
             format: new ol.format.GeoJSON()
         }),
 style: new ol.style.Style({

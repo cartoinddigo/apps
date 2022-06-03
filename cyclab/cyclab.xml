@@ -5,7 +5,7 @@
      titlehelp="CycLAB - Indice de cyclabilité"
      mouseposition="true" 
      logo="" 
-     help="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/pages/cyclab_help.html" 
+     help="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/pages/cyclab_help.html" 
      measuretools="true" 
      exportpng="true" 
      style="css/themes/green_sea.css"
@@ -61,7 +61,7 @@
             <layer id="zone" name="Zone d'étude" visible="true" queryable="false" toplayer="false"
                     customcontrol="false"
                     type="customlayer" style="" opacity="1" legendurl="img/invisible.png" 
-                    url="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/customlayers/zone.js" 
+                    url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/customlayers/zone.js" 
                     tooltip="false" tooltipenabled="false"
                     attribution="Source: DDTM 35" 
                     metadata="" 
@@ -71,7 +71,7 @@
             <layer id="epci" name="Intercommunalités" visible="false" queryable="false" toplayer="false"
                     customcontrol="false"
                     type="customlayer" style="" opacity="0.8" legendurl="img/invisible.png"
-                    url="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/customlayers/epci.js"
+                    url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/customlayers/epci.js"
                     fields="nom_epci"
                     tooltip="true" tooltipenabled="false"
                     attribution="Source: DDTM 35" 
@@ -83,7 +83,7 @@
             <layer id="communes" name="Commune" visible="false" queryable="false" 
                     fields="NOM_COM" aliases="Nom" 
                     type="customlayer" style="" opacity="1" legendurl="img/invisible.png" 
-                    url="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/customlayers/communes.js" 
+                    url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/customlayers/communes.js" 
                     tooltip="true" tooltipenabled="false"
                     attribution="Source: DDTM 35" 
                     metadata-csw="">
@@ -198,7 +198,7 @@
                 attribution=""
                 metadata=""
                 metadata-csw="">
-                <template url="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/templates/grd.mst"></template>
+                <template url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/templates/grd.mst"></template>
             </layer>
 
             <layer id="ddtm35:cyclable_grille_800m"
@@ -218,7 +218,7 @@
                 attribution=""
                 metadata=""
                 metadata-csw="">
-                <template url="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/templates/grd.mst"></template>
+                <template url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/templates/grd.mst"></template>
             </layer>
          </theme>
 
@@ -287,7 +287,7 @@
             <layer id="schema_exist" name="Schémas cyclables existants" visible="false" queryable="true" toplayer="true"
                     customcontrol="false"
                     type="customlayer" style="" opacity="1" legendurl="" 
-                    url="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/customlayers/sdc.js" 
+                    url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/customlayers/sdc.js" 
                     tooltip="false" tooltipenabled="false"
                     attribution="Source: DDTM 35" 
                     metadata="" 

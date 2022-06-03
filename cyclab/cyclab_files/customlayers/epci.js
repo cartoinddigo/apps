@@ -23,7 +23,7 @@ var style_claire = new ol.style.Style({
 mviewer.customLayers.epci = {};
 mviewer.customLayers.epci.layer = new ol.layer.Vector({
         source: new ol.source.Vector({
-            url: "https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/data/epci.geojson",
+            url: "http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/data/epci.geojson",
             format: new ol.format.GeoJSON()
         }),
         style: [style_claire, style_sombre]

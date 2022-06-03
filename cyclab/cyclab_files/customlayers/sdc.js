@@ -22,7 +22,7 @@ var vert = new ol.style.Style({
 mviewer.customLayers.schema_exist = {};
 mviewer.customLayers.schema_exist.layer = new ol.layer.Vector({
         source: new ol.source.Vector({
-            url: "https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/data/schema_cyclables_existant.geojson",
+            url: "http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/data/schema_cyclables_existant.geojson",
             format: new ol.format.GeoJSON()
         }),
         style: function(feature) {

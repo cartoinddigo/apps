@@ -1,5 +1,5 @@
 <HEAD>
-<LINK rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/css/grd.css">
+<LINK rel="stylesheet" type="text/css" href="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/css/grd.css">
 </HEAD>
 
 {{#features}}
@@ -57,23 +57,23 @@ if ({{c_alim}}+ {{c_commerc}} + {{c_enseigne}} + {{c_loisirs}} + {{c_touisme}} +
 
 
 if ({{c_alim}} == 1) {
-  document.getElementById("Alimentation").innerHTML = '<img src="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/img/picto/icons8-ingredients-30.png" width="30" height="30" onclick="legende_picto()"/> {{Alim}} commerces alimentaires';
+  document.getElementById("Alimentation").innerHTML = '<img src="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/img/picto/icons8-ingredients-30.png" width="30" height="30" onclick="legende_picto()"/> {{Alim}} commerces alimentaires';
 }
 
 if ({{c_commerc}} == 1) {
-  document.getElementById("Commerces").innerHTML = '<img src="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/img/picto/icons8-shopping-bag-full-30.png" width="30" height="30"/> {{Commerce}} commerces et services';
+  document.getElementById("Commerces").innerHTML = '<img src="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/img/picto/icons8-shopping-bag-full-30.png" width="30" height="30"/> {{Commerce}} commerces et services';
 }
 if ({{c_enseigne}} == 1) {
-  document.getElementById("Enseignement").innerHTML = '<img src="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/img/picto/icons8-teacher-48.png" width="30" height="30"/> {{Enseigneme}} etablissements d\'enseignement';
+  document.getElementById("Enseignement").innerHTML = '<img src="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/img/picto/icons8-teacher-48.png" width="30" height="30"/> {{Enseigneme}} etablissements d\'enseignement';
 }
 if ({{c_loisirs}} == 1) {
-  document.getElementById("Loisirs").innerHTML = '<img src="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/img/picto/icons8-sports-48.png" width="30" height="30"/> {{Loisirs}} equipements sportifs et de loisirs';
+  document.getElementById("Loisirs").innerHTML = '<img src="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/img/picto/icons8-sports-48.png" width="30" height="30"/> {{Loisirs}} equipements sportifs et de loisirs';
 }
 if ({{c_touisme}} == 1) {
-  document.getElementById("Tourisme").innerHTML = '<img src="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/img/picto/icons8-hotel-bed-50.png" width="30" height="30"/> Interêt touristiques';
+  document.getElementById("Tourisme").innerHTML = '<img src="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/img/picto/icons8-hotel-bed-50.png" width="30" height="30"/> Interêt touristiques';
 }
 if ({{c_transpor}} == 1) {
-  document.getElementById("Transport").innerHTML = '<img src="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/img/picto/icons8-train-30.png" width="30" height="30"/> Proximité d\'une gare ferroviaire';
+  document.getElementById("Transport").innerHTML = '<img src="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/img/picto/icons8-train-30.png" width="30" height="30"/> Proximité d\'une gare ferroviaire';
 }
 
 
@@ -86,25 +86,25 @@ if ({{c_fdt}}+ {{c_repmod}} + {{c_pProx}} + {{c_pInt}} + {{c_pSup}} >= 1) {
 
 let code = '';
 if ({{c_pProx}} == 1) {
-	code += '<img src="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/img/picto/icons8-prox.png" width="30" height="30"/>Pôle de proximité<br>';
+	code += '<img src="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/img/picto/icons8-prox.png" width="30" height="30"/>Pôle de proximité<br>';
 }	
 if ({{c_pInt}} == 1) {
-	code += '<img src="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/img/picto/icons8-select-24.png" width="30" height="30"/>Pôle intermédiaire<br>';
+	code += '<img src="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/img/picto/icons8-select-24.png" width="30" height="30"/>Pôle intermédiaire<br>';
 	
 }
 if ({{c_pSup}} == 1) {
-	code += '<img src="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/img/picto/icons8-select-48.png" width="30" height="30"/>Pôle supérieur<br>';
+	code += '<img src="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/img/picto/icons8-select-48.png" width="30" height="30"/>Pôle supérieur<br>';
 }
 
 document.getElementById("liaisons").innerHTML = code
 
 
 if ({{c_fdt}} == 1) {
-  document.getElementById("fdt").innerHTML = '<img src="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/img/picto/icons8-office-24.png" width="30" height="30"/> Domicile / Travail';
+  document.getElementById("fdt").innerHTML = '<img src="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/img/picto/icons8-office-24.png" width="30" height="30"/> Domicile / Travail';
 }
 
 if ({{c_repmod}} == 1) {
-  document.getElementById("repmod").innerHTML = '<img src="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/img/picto/icons8-liaison-train-30.png" width="30" height="30"/> Report modal vers une gare';
+  document.getElementById("repmod").innerHTML = '<img src="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/img/picto/icons8-liaison-train-30.png" width="30" height="30"/> Report modal vers une gare';
 }
 
 // URBANISATION
@@ -115,19 +115,19 @@ if ({{c_urb_dens}} + {{c_urb_disc}} + {{c_urb_cind}} >= 1) {
 }
 let str = ''
 if ({{c_urb_dens}} == 1) {
-  str += '<img src="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/img/picto/icons8-city-buildings-24.png" alt="Bâti dense" width="30" height="30"/>';
+  str += '<img src="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/img/picto/icons8-city-buildings-24.png" alt="Bâti dense" width="30" height="30"/>';
 } 
 if ({{c_urb_disc}} == 1){
 	
-	str += '<img src="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/img/picto/icons8-house-48.png" alt="Bâti discontinu" width="30" height="30"/>'
+	str += '<img src="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/img/picto/icons8-house-48.png" alt="Bâti discontinu" width="30" height="30"/>'
 }
 if ({{c_urb_cind}} == 1){
 	
-	str += '<img src="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/img/picto/icons8-factory-48.png" alt="Zones Industrielles et Commerciales" width="30" height="30"/>'
+	str += '<img src="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/img/picto/icons8-factory-48.png" alt="Zones Industrielles et Commerciales" width="30" height="30"/>'
 }
 if ({{c_urb_vert}} == 1){
 	
-	str += '<img src="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/img/picto/icons8-park-64.png" alt="Espaces verts" width="30" height="30"/>'
+	str += '<img src="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/img/picto/icons8-park-64.png" alt="Espaces verts" width="30" height="30"/>'
 }
 document.getElementById("urbanisation").innerHTML = str
 
