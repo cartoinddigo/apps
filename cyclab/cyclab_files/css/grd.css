@@ -1,0 +1,29 @@
+#cyclab {
+	
+}
+
+#bloc-cyclab{
+	font-size: 25px;
+}
+#bloc_centrer_bg {
+	font-size: 25px;
+	border: solid;
+	border-color: 	#bbff00;
+	background-color: #bbff00;
+	text-align: center;
+}
+
+.item ul{
+	padding: 0;
+	
+}
+.item li{
+	list-style-type: none;
+
+}
+
+.item h3{
+	font-size: 15px;
+	font-weight: bold;
+
+}

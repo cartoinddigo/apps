@@ -1,0 +1,58 @@
+<ul class="nav nav-tabs" role="tablist">    
+	<li role="presentation" class="active"><a href="#p1" aria-controls="profile" role="tab" data-toggle="tab">Le territoire</a></li>
+    <li role="presentation" ><a href="#p2" aria-controls="messages" role="tab" data-toggle="tab">Les critères de la cyclabilité</a></li>
+    <li role="presentation" ><a href="#p3" aria-controls="profile" role="tab" data-toggle="tab">L'indice calculé</a></li>
+    <li role="presentation" ><a href="#p4" aria-controls="settings" role="tab" data-toggle="tab">Pour aller plus loin</a></li>   
+</ul>
+
+ <!-- Tab panes -->
+<div class="tab-content">
+
+	<div id="p1" role="tabpanel" class="tab-pane active">
+        <h5>Un territoire élargi</h5>
+        <p>Département de l'Ille-et-Vilaine, élargi aux bassins de vie limitrophes</p>
+        <h5>Maillage du territoire</h5>
+            <ul>
+                <li>21 600 cellules héxagonales</li>
+                <li>résolution : 800 m</li>
+            </ul>
+        <h5>Des données open-source</h5>
+        <p>Notre algorithme est basé sur des jeux de données publiques, accessibles librement et disponibles sur l’ensemble de la France métropolitaine</p>
+    </div>  
+
+    <div id="p2" role="tabpanel" class="tab-pane">
+        <p>Pour chaque cellules, la cyclabilité est caractérisée selon plusieurs critères :</p>
+        <h5>Les déplacements à destination</h5>
+            <p>Il s'agit des motifs qui conduisent les usager à se déplacer à vélo vers une zone pour rallier des équipements et services. Ils sont intégrés dans l'algorithme par des recherches d'aires de chalandises.</p>
+            <p>Thématiques prises en compte :</p>
+            <ul>
+                <li>Les commerces alimentaires</li>
+                <li>Les commerces non alimentaires et services aux personnes</li>
+                <li>Les équipements d'enseignement</li>
+                <li>Les gares ferroviaires</li>
+                <li>Les équipements de loisirs et sportifs</li>
+                <li>Les équipements touristique</li>
+            </ul>
+        <h5>Les flux en transits</h5>
+            <p>Il s'agit de déplacements linéaires, faisant ressortir des liaisons interurbaines. Ils sont intégrés dans l'algorithme par des recherches d'itinéraires</p>
+            <p>Flux prises en compte :</p>
+            <ul>
+                <li>Les déplacements domestiques pour rallier un équipement non présent dans sa commune de résidence</li>
+                <li>Les déplacements entre les communes de domicile et les communes de travail</li>
+                <li>Le repport modal vers les gares</li>
+            </ul>
+        <h5>Les caractéristiques de l'environnement</h5>
+            <p>Il s'agit des caractéristiques sous jacentes du territoire qui vont favoriser ou entraver les capacité de déplacements à vélo. (répartition de la population, relief, aménagements cyclables existants...)</p>
+    </div>  
+    <div id="p3" role="tabpanel" class="tab-pane">
+        <h5>Hiérarchisation des critères</h5>
+        <h5>Projection des critères sur la grille</h5>
+            <p>Pour chaque critère, une valeure de 1 est attribuée aux cellules de la grille intersectée par l'aire de chalandise ou l'itinéraire</p>
+            <ul>
+                <li>Les bornes des aires de </li>
+            </ul>       
+    </div>
+    <div id="p4" role="tabpanel" class="tab-pane">
+        <h5>Crédits</h5>      
+    </div>    
+</div>
