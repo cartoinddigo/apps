@@ -189,7 +189,7 @@
                 legendurl=""
                 opacity="1"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_quanti_10cl.sld"
+                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_quanti_10cl.sld"
                 jsonfields="NOM_COM"
                 infoformat="application/vnd.ogc.gml"
                 infopanel="right-panel"
