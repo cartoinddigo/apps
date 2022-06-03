@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <application 
+     title="CycLAB - Indice de cyclabilité"
+     titlehelp="CycLAB - Indice de cyclabilité"
+     mouseposition="true" 
+     logo="" 
+     help="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/pages/cyclab_help.html" 
+     measuretools="true" 
+     exportpng="true" 
+     style="css/themes/green_sea.css"
+     />
+
+
+    <mapoptions maxzoom="19" 
+        projection="EPSG:3857" 
+        center="-110750.13768758904,6145000.57790189" 
+        zoom="9" 
+        projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244"
+    />
+  
+    <baselayers style="gallery">
+        <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png" 
+            url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" maxzoom="20" 
+            visible="true" attribution="Map tiles by  &lt;a href='https://cartodb.com/attributions' target='_blank'>CartoDb &lt;/a>, under  &lt;a href='https://creativecommons.org/licenses/by/3.0/' target='_blank'>CC BY 3.0 &lt;/a>" />
+		<baselayer visible="false" id="osm_google" 
+			thumbgallery="img/basemap/osm_google.png" title="GéoBretagne" label="OpenStreetMap GéoBretagne" type="WMS" url="https://osm.geobretagne.fr/gwc01/service/wms" layers="osm:google" format="image/png" 
+            attribution="GéoBretagne. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>"/>
+
+
+
+        
+        <baselayer  type="OSM" id="darkmatter" label="Dark Matter" title="CartoDb" thumbgallery="img/basemap/darkmatter.png" 
+            url="https://{a-c}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png" maxzoom="20" 
+            visible="false" attribution="Map tiles by  &lt;a href='https://cartodb.com/attributions' target='_blank'>CartoDb &lt;/a>, under  &lt;a href='https://creativecommons.org/licenses/by/3.0/' target='_blank'>CC BY 3.0 &lt;/a>" />
+		<baselayer visible="false" id="ortho1" 
+			thumbgallery="img/basemap/ortho.jpg" title="GéoBretagne" label="Photo aérienne GéoBretagne" type="WMTS" url="https://tile.geobretagne.fr/gwc02/service/wmts" layers="satellite" format="image/png" style="_null" matrixset="EPSG:3857" fromcapacity="false" 
+			attribution="&lt;a href='https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3a0ac2e3-7af1-4dec-9f36-dae6b5a8c731' target='_blank' >Partenaires GéoBretagne - IGN&lt;/a>"/>
+        
+    </baselayers>    
+
+    <proxy url=""/>
+
+    <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par la BAN"/>
+    <searchparameters bbox="false" localities="true" features="false" />   
+
+    <themes> 
+        <theme name="Le territoire"  collapsed="true" id="territoire" icon="fas fa-globe">
+            <layer id="departement_metro" name="Ille-et-Vilaine" visible="false" queryable="false" toplayer="false"
+                    customcontrol="false"
+                    type="wms" style="masque" opacity="0.8" legendurl="img/invisible.png"
+                    infoformat="application/vnd.ogc.gml"
+                    url="https://geobretagne.fr/geoserver/ign/wms"
+                    filter="insee_dep NOT IN ('35')"
+                    tooltip="false" tooltipenabled="false"
+                    attribution="IGN" 
+                    metadata="" 
+                    metadata-csw="">
+            </layer>
+
+            <layer id="zone" name="Zone d'étude" visible="true" queryable="false" toplayer="false"
+                    customcontrol="false"
+                    type="customlayer" style="" opacity="1" legendurl="img/invisible.png" 
+                    url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/customlayers/zone.js" 
+                    tooltip="false" tooltipenabled="false"
+                    attribution="Source: DDTM 35" 
+                    metadata="" 
+                    metadata-csw="">
+            </layer>
+
+            <layer id="epci" name="Intercommunalités" visible="false" queryable="false" toplayer="false"
+                    customcontrol="false"
+                    type="customlayer" style="" opacity="0.8" legendurl="img/invisible.png"
+                    url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/customlayers/epci.js"
+                    fields="nom_epci"
+                    tooltip="true" tooltipenabled="false"
+                    attribution="Source: DDTM 35" 
+                    metadata="" 
+                    metadata-csw="">
+            </layer>
+
+
+            <layer id="communes" name="Commune" visible="false" queryable="false" 
+                    fields="NOM_COM" aliases="Nom" 
+                    type="customlayer" style="" opacity="1" legendurl="img/invisible.png" 
+                    url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/customlayers/communes.js" 
+                    tooltip="true" tooltipenabled="false"
+                    attribution="Source: DDTM 35" 
+                    metadata-csw="">
+            </layer>	 
+
+
+            
+
+
+        </theme>
+
+        <theme name="Les critères de cyclabilité"  collapsed="true" id="criteres" icon="fas fa-globe">
+ 
+            <layer id="ddtm35:cyclable_grille_800m"
+                name="Motifs de déplacements"
+                visible="false"
+                tiled="true"
+                queryable="false"
+                expanded = "true"
+                type="wms"
+                legendurl=""
+                opacity="0.8"
+                infoformat="application/vnd.ogc.gml"
+                url="https://geobretagne.fr/geoserver/ddtm35/wms"
+                sld="
+                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_alim.sld,
+                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_commerces.sld,
+                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_enseignement.sld,
+                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_loisirs.sld,
+                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_tourisme.sld,
+                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_transport.sld,"
+                stylesalias="
+                Alimentation,
+                Commerces et services,
+                Enseignement,
+                Loisirs,
+                Tourisme,
+                Gare,"
+                attribution=""
+                metadata=""
+                metadata-csw="">
+            </layer>
+            <layer id="ddtm35:cyclable_grille_800m"
+                name="Flux en transits"
+                visible="false"
+                tiled="true"
+                queryable="false"
+                expanded = "true"
+                type="wms"
+                legendurl=""
+                opacity="0.8"
+                infoformat="application/vnd.ogc.gml"
+                url="https://geobretagne.fr/geoserver/ddtm35/wms"
+                sld="
+                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_repmod.sld,
+                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_fdt_quanti.sld,
+                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_fdom.sld,"
+                stylesalias="
+                Rep. modal vers les gares,
+                Flux professionels,
+                Flux domestiques,"
+                attribution=""
+                metadata=""
+                metadata-csw="">
+            </layer>
+            <layer id="ddtm35:cyclable_grille_800m"
+                name="Variables d'environnement"
+                visible="false"
+                tiled="true"
+                queryable="false"
+                expanded = "true"
+                type="wms"
+                legendurl=""
+                opacity="0.8"
+                infoformat="application/vnd.ogc.gml"
+                url="https://geobretagne.fr/geoserver/ddtm35/wms"
+                sld="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_poid_pop.sld,
+                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_effectifs_salaries.sld,
+                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_amgt_cyclo.sld,
+                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_relief.sld,"
+                stylesalias="
+                Pois de la population,
+                Secteurs d'emploi,
+                Aménagements cyclables existants,
+                Relief"
+                attribution=""
+                metadata=""
+                metadata-csw="">
+            </layer>           
+        </theme>
+
+        <theme name="L'indice calculé" collapsed="false" id="cyclab" icon="fas fa-globe">
+
+
+
+            <layer id="ddtm35:cyclable_grille_800m"
+                name="Cyclabilité globale"
+                exclusive="true"
+                visible="false"
+                tiled="true"
+                queryable="true"
+                type="wms"
+                legendurl=""
+                opacity="1"
+                url="https://geobretagne.fr/geoserver/ddtm35/wms"
+                sld="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_quanti_10cl.sld"
+                jsonfields="NOM_COM"
+                infoformat="application/vnd.ogc.gml"
+                infopanel="right-panel"
+                tooltip="false"
+                tooltipenabled="false"
+                attribution=""
+                metadata=""
+                metadata-csw="">
+                <template url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/templates/grd.mst"></template>
+            </layer>
+
+            <layer id="ddtm35:cyclable_grille_800m"
+                name="Potentiel de cyclabilité"
+                exclusive="true"
+                visible="false"
+                tiled="true"
+                queryable="true"
+                type="wms"
+                legendurl=""
+                opacity="1"
+                infoformat="application/vnd.ogc.gml"
+                url="https://geobretagne.fr/geoserver/ddtm35/wms"
+                sld="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_quali_4cl.sld"
+                tooltip="false"
+                tooltipenabled="false"
+                attribution=""
+                metadata=""
+                metadata-csw="">
+                <template url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/templates/grd.mst"></template>
+            </layer>
+         </theme>
+
+
+
+
+        <theme name="Pour aller plus loin"  collapsed="true" id="illustratives_data" icon="fas fa-globe">
+
+            <layer id="ddtm35:cyclable_trafic_routier"
+                name="Trafic routier"
+                exclusive="false"
+                visible="false"
+                tiled="true"
+                queryable="true"
+                type="wms"
+                legendurl=""
+                opacity="1"
+                infoformat="application/vnd.ogc.gml"
+                url="https://geobretagne.fr/geoserver/ddtm35/wms"
+                sld="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/trafic.sld"
+                tooltip="false"
+                tooltipenabled="false"
+                attribution=""
+                metadata=""
+                metadata-csw="">
+            </layer>
+
+            <layer id="ddtm35:cyclable_amgt_cyclables_osm"
+                name="Aménagements cyclables existants (OSM)"
+                exclusive="false"
+                visible="false"
+                tiled="true"
+                queryable="true"
+                type="wms"
+                legendurl=""
+                opacity="1"
+                infoformat="application/vnd.ogc.gml"
+                url="https://geobretagne.fr/geoserver/ddtm35/wms"
+                sld="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/amg_cyclo_osm.sld"
+                tooltip="false"
+                tooltipenabled="false"
+                attribution=""
+                metadata=""
+                metadata-csw="">
+            </layer>
+
+            <layer id="ddtm35:cyclable_itineraires_on3v"
+                name="Vélo-routes et Voies Vertes (ON3V)"
+                exclusive="false"
+                visible="false"
+                tiled="true"
+                queryable="true"
+                type="wms"
+                legendurl=""
+                opacity="1"
+                infoformat="application/vnd.ogc.gml"
+                url="https://geobretagne.fr/geoserver/ddtm35/wms"
+                sld="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/amg_cyclo_on3v.sld"
+                tooltip="false"
+                tooltipenabled="false"
+                attribution=""
+                metadata=""
+                metadata-csw="">
+            </layer>
+
+            <layer id="schema_exist" name="Schémas cyclables existants" visible="false" queryable="true" toplayer="true"
+                    customcontrol="false"
+                    type="customlayer" style="" opacity="1" legendurl="" 
+                    url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/customlayers/sdc.js" 
+                    tooltip="false" tooltipenabled="false"
+                    attribution="Source: DDTM 35" 
+                    metadata="" 
+                    metadata-csw="">
+            </layer>
+            <layer id="ddtm35:cyclable_grille_800m"
+                name="Grille (données brutes)"
+                exclusive="false"
+                visible="false"
+                tiled="true"
+                queryable="true"
+                type="wms"
+                legendurl=""
+                opacity="1"
+                infoformat="application/vnd.ogc.gml"
+                url="https://geobretagne.fr/geoserver/ddtm35/wms"
+                tooltip="false"
+                tooltipenabled="false"
+                attribution=""
+                metadata=""
+                metadata-csw="">
+            </layer>
+        </theme>
+
+    </themes>
+</config>
