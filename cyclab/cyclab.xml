@@ -5,7 +5,7 @@
      titlehelp="CycLAB - Indice de cyclabilité"
      mouseposition="true" 
      logo="" 
-     help="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/pages/cyclab_help.html" 
+     help="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/pages/cyclab_help.html" 
      measuretools="true" 
      exportpng="true" 
      style="css/themes/green_sea.css"
@@ -61,7 +61,7 @@
             <layer id="zone" name="Zone d'étude" visible="true" queryable="false" toplayer="false"
                     customcontrol="false"
                     type="customlayer" style="" opacity="1" legendurl="img/invisible.png" 
-                    url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/customlayers/zone.js" 
+                    url="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/customlayers/zone.js" 
                     tooltip="false" tooltipenabled="false"
                     attribution="Source: DDTM 35" 
                     metadata="" 
@@ -71,7 +71,7 @@
             <layer id="epci" name="Intercommunalités" visible="false" queryable="false" toplayer="false"
                     customcontrol="false"
                     type="customlayer" style="" opacity="0.8" legendurl="img/invisible.png"
-                    url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/customlayers/epci.js"
+                    url="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/customlayers/epci.js"
                     fields="nom_epci"
                     tooltip="true" tooltipenabled="false"
                     attribution="Source: DDTM 35" 
@@ -83,7 +83,7 @@
             <layer id="communes" name="Commune" visible="false" queryable="false" 
                     fields="NOM_COM" aliases="Nom" 
                     type="customlayer" style="" opacity="1" legendurl="img/invisible.png" 
-                    url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/customlayers/communes.js" 
+                    url="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/customlayers/communes.js" 
                     tooltip="true" tooltipenabled="false"
                     attribution="Source: DDTM 35" 
                     metadata-csw="">
@@ -109,12 +109,12 @@
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
                 sld="
-                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_alim.sld,
-                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_commerces.sld,
-                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_enseignement.sld,
-                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_loisirs.sld,
-                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_tourisme.sld,
-                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_transport.sld,"
+                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_alim.sld,
+                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_commerces.sld,
+                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_enseignement.sld,
+                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_loisirs.sld,
+                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_tourisme.sld,
+                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_transport.sld,"
                 stylesalias="
                 Alimentation,
                 Commerces et services,
@@ -138,9 +138,9 @@
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
                 sld="
-                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_repmod.sld,
-                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_fdt_quanti.sld,
-                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_fdom.sld,"
+                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_repmod.sld,
+                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_fdt_quanti.sld,
+                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_fdom.sld,"
                 stylesalias="
                 Rep. modal vers les gares,
                 Flux professionels,
@@ -160,10 +160,10 @@
                 opacity="0.8"
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_poid_pop.sld,
-                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_effectifs_salaries.sld,
-                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_amgt_cyclo.sld,
-                http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_relief.sld,"
+                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_poid_pop.sld,
+                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_effectifs_salaries.sld,
+                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_amgt_cyclo.sld,
+                https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_relief.sld,"
                 stylesalias="
                 Pois de la population,
                 Secteurs d'emploi,
@@ -198,7 +198,7 @@
                 attribution=""
                 metadata=""
                 metadata-csw="">
-                <template url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/templates/grd.mst"></template>
+                <template url="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/templates/grd.mst"></template>
             </layer>
 
             <layer id="ddtm35:cyclable_grille_800m"
@@ -212,13 +212,13 @@
                 opacity="1"
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/grd_quali_4cl.sld"
+                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_quali_4cl.sld"
                 tooltip="false"
                 tooltipenabled="false"
                 attribution=""
                 metadata=""
                 metadata-csw="">
-                <template url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/templates/grd.mst"></template>
+                <template url="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/templates/grd.mst"></template>
             </layer>
          </theme>
 
@@ -238,7 +238,7 @@
                 opacity="1"
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/trafic.sld"
+                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/trafic.sld"
                 tooltip="false"
                 tooltipenabled="false"
                 attribution=""
@@ -257,7 +257,7 @@
                 opacity="1"
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/amg_cyclo_osm.sld"
+                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/amg_cyclo_osm.sld"
                 tooltip="false"
                 tooltipenabled="false"
                 attribution=""
@@ -276,7 +276,7 @@
                 opacity="1"
                 infoformat="application/vnd.ogc.gml"
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/sld/amg_cyclo_on3v.sld"
+                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/amg_cyclo_on3v.sld"
                 tooltip="false"
                 tooltipenabled="false"
                 attribution=""
@@ -287,7 +287,7 @@
             <layer id="schema_exist" name="Schémas cyclables existants" visible="false" queryable="true" toplayer="true"
                     customcontrol="false"
                     type="customlayer" style="" opacity="1" legendurl="" 
-                    url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/customlayers/sdc.js" 
+                    url="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/customlayers/sdc.js" 
                     tooltip="false" tooltipenabled="false"
                     attribution="Source: DDTM 35" 
                     metadata="" 

@@ -19,7 +19,7 @@ var style_claire = new ol.style.Style({
 mviewer.customLayers.zone = {};
 mviewer.customLayers.zone.layer = new ol.layer.Vector({
         source: new ol.source.Vector({
-            url: "http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/data/zone.geojson",
+            url: "https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/data/zone.geojson",
             format: new ol.format.GeoJSON()
         }),
         style: [style_claire, style_sombre]
