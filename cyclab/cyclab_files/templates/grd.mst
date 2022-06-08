@@ -4,9 +4,9 @@
 
 {{#features}}
 <li class="item" id="{{feature_ol_uid}}"> 
-	<h3>Cellule appartenant à la commune de {{NOM_COM}}</h3>
+	<h3>Commune de {{NOM_COM}}</h3>
 	<div id = "bloc_centrer_bg">
-		<div>Cyclabilité : <br><span id="cyclab">{{cyclab}}</span>%</div>
+		<div>Cyclabilité de la cellule : <br><span id="cyclab">{{cyclab}}</span>%</div>
 	</div>
 	<h3 id="contexte">Context {{TypCom}}</h3>
 	<ul>

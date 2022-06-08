@@ -95,7 +95,51 @@
 
         </theme>
 
+
+
+
+
         <theme name="Les critères de cyclabilité"  collapsed="true" id="criteres" icon="fas fa-globe">
+
+
+            <layer id="ddtm35:cyclable_amgt_cyclables_osm"
+                name="Aménagements cyclables existants (OSM)"
+                exclusive="false"
+                visible="false"
+                tiled="true"
+                queryable="true"
+                type="wms"
+                legendurl=""
+                opacity="1"
+                infoformat="application/vnd.ogc.gml"
+                url="https://geobretagne.fr/geoserver/ddtm35/wms"
+                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/amg_cyclo_osm.sld"
+                tooltip="false"
+                tooltipenabled="false"
+                attribution="Données OSM"
+                metadata=""
+                metadata-csw="">
+            </layer>
+
+            <layer id="ddtm35:cyclable_itineraires_on3v"
+                name="Vélo-routes et Voies Vertes (ON3V)"
+                exclusive="false"
+                visible="false"
+                tiled="true"
+                queryable="true"
+                type="wms"
+                legendurl=""
+                opacity="1"
+                infoformat="application/vnd.ogc.gml"
+                url="https://geobretagne.fr/geoserver/ddtm35/wms"
+                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/amg_cyclo_on3v.sld"
+                tooltip="false"
+                tooltipenabled="false"
+                attribution="Données ON3V"
+                metadata=""
+                metadata-csw="">
+            </layer>
+
  
             <layer id="ddtm35:cyclable_grille_800m"
                 name="Motifs de déplacements"
@@ -122,7 +166,7 @@
                 Loisirs,
                 Tourisme,
                 Gare,"
-                attribution=""
+                attribution="Source: DDTM 35"
                 metadata=""
                 metadata-csw="">
             </layer>
@@ -145,7 +189,7 @@
                 Rep. modal vers les gares,
                 Flux professionels,
                 Flux domestiques,"
-                attribution=""
+                attribution="Source: DDTM 35"
                 metadata=""
                 metadata-csw="">
             </layer>
@@ -169,10 +213,12 @@
                 Secteurs d'emploi,
                 Aménagements cyclables existants,
                 Relief"
-                attribution=""
+                attribution="Source: DDTM 35"
                 metadata=""
                 metadata-csw="">
-            </layer>           
+
+            </layer>  
+
         </theme>
 
         <theme name="L'indice calculé" collapsed="false" id="cyclab" icon="fas fa-globe">
@@ -195,7 +241,7 @@
                 infopanel="right-panel"
                 tooltip="false"
                 tooltipenabled="false"
-                attribution=""
+                attribution="Source: DDTM 35. Discrétisation en 10 classes d'amplitude égale : Plus la valeur est élevée, plus la cyclabilité est importante."
                 metadata=""
                 metadata-csw="">
                 <template url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/templates/grd.mst"></template>
@@ -215,7 +261,7 @@
                 sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_quali_4cl.sld"
                 tooltip="false"
                 tooltipenabled="false"
-                attribution=""
+                attribution="Source: DDTM 35. Les cellules inférieures à la moyenne départementale sont considérées comme à cyclabilité négligeable et ne sont pas affichées. Les limites entres les autres classes sont déterminées par la méthode des seuils naturels."
                 metadata=""
                 metadata-csw="">
                 <template url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/templates/grd.mst"></template>
@@ -241,50 +287,14 @@
                 sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/trafic.sld"
                 tooltip="false"
                 tooltipenabled="false"
-                attribution=""
+                attribution="Données trafics CD35 2019"
                 metadata=""
                 metadata-csw="">
             </layer>
 
-            <layer id="ddtm35:cyclable_amgt_cyclables_osm"
-                name="Aménagements cyclables existants (OSM)"
-                exclusive="false"
-                visible="false"
-                tiled="true"
-                queryable="true"
-                type="wms"
-                legendurl=""
-                opacity="1"
-                infoformat="application/vnd.ogc.gml"
-                url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/amg_cyclo_osm.sld"
-                tooltip="false"
-                tooltipenabled="false"
-                attribution=""
-                metadata=""
-                metadata-csw="">
-            </layer>
 
-            <layer id="ddtm35:cyclable_itineraires_on3v"
-                name="Vélo-routes et Voies Vertes (ON3V)"
-                exclusive="false"
-                visible="false"
-                tiled="true"
-                queryable="true"
-                type="wms"
-                legendurl=""
-                opacity="1"
-                infoformat="application/vnd.ogc.gml"
-                url="https://geobretagne.fr/geoserver/ddtm35/wms"
-                sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/amg_cyclo_on3v.sld"
-                tooltip="false"
-                tooltipenabled="false"
-                attribution=""
-                metadata=""
-                metadata-csw="">
-            </layer>
 
-            <layer id="schema_exist" name="Schémas cyclables existants" visible="false" queryable="true" toplayer="true"
+<!--             <layer id="schema_exist" name="Schémas cyclables existants" visible="false" queryable="true" toplayer="true"
                     customcontrol="false"
                     type="customlayer" style="" opacity="1" legendurl="" 
                     url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/customlayers/sdc.js" 
@@ -292,7 +302,7 @@
                     attribution="Source: DDTM 35" 
                     metadata="" 
                     metadata-csw="">
-            </layer>
+            </layer> -->
             <layer id="ddtm35:cyclable_grille_800m"
                 name="Grille (données brutes)"
                 exclusive="false"
@@ -306,7 +316,7 @@
                 url="https://geobretagne.fr/geoserver/ddtm35/wms"
                 tooltip="false"
                 tooltipenabled="false"
-                attribution=""
+                attribution="Source: DDTM 35"
                 metadata=""
                 metadata-csw="">
             </layer>
