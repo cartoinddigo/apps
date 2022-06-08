@@ -261,7 +261,7 @@
                 sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_quali_4cl.sld"
                 tooltip="false"
                 tooltipenabled="false"
-                attribution="Source: DDTM 35. Les cellules inférieures à la moyenne départementale sont considérées comme à cyclabilité négligeable et ne sont pas affichées. Les limites entres les autres classes sont déterminées par la méthode des seuils naturels."
+                attribution="Source: DDTM 35. Les cellules où la cyclabilité est inférieure à la moyenne départementale sont considérées comme négligeables et ne sont pas affichées. Les limites entres les autres classes sont déterminées par la méthode des seuils naturels."
                 metadata=""
                 metadata-csw="">
                 <template url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/templates/grd.mst"></template>
@@ -287,9 +287,10 @@
                 sld="https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/trafic.sld"
                 tooltip="false"
                 tooltipenabled="false"
-                attribution="Données trafics CD35 2019"
+                attribution="Données CD35 2019"
                 metadata=""
                 metadata-csw="">
+                <template url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/templates/trafic.mst"></template>
             </layer>
 
 

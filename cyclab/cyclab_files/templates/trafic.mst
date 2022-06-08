@@ -1,0 +1,5 @@
+{{#features}}
+<h3>{{ROUTE}} ({{COMMUNE}})</h3>
+<p>Trafic moyen journalier (2019) : 
+<br>{{MOYENNE_J_}} v/j</p>
+{{/features}}
