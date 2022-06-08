@@ -24,8 +24,8 @@
           </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#8CF765</se:SvgParameter>
-              <se:CssParameter name="fill">#8CF765</se:CssParameter>
+              <se:SvgParameter name="fill">#fcbea5</se:SvgParameter>
+              <se:CssParameter name="fill">#fcbea5</se:CssParameter>
             </se:Fill>
           </se:PolygonSymbolizer>
         </se:Rule>
@@ -48,8 +48,8 @@
           </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#F7E665</se:SvgParameter>
-              <se:CssParameter name="fill">#F7E665</se:CssParameter>
+              <se:SvgParameter name="fill">#fb7050</se:SvgParameter>
+              <se:CssParameter name="fill">#fb7050</se:CssParameter>
             </se:Fill>
           </se:PolygonSymbolizer>
         </se:Rule>
@@ -72,8 +72,8 @@
           </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#F77B65</se:SvgParameter>
-              <se:CssParameter name="fill">#F77B65</se:CssParameter>
+              <se:SvgParameter name="fill">#d32020</se:SvgParameter>
+              <se:CssParameter name="fill">#d32020</se:CssParameter>
             </se:Fill>
           </se:PolygonSymbolizer>
         </se:Rule>
@@ -96,8 +96,8 @@
           </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#A05D5D</se:SvgParameter>
-              <se:CssParameter name="fill">#A05D5D</se:CssParameter>
+              <se:SvgParameter name="fill">#67000d</se:SvgParameter>
+              <se:CssParameter name="fill">#67000d</se:CssParameter>
             </se:Fill>
           </se:PolygonSymbolizer>
         </se:Rule>

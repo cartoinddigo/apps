@@ -53,7 +53,7 @@
                     url="https://geobretagne.fr/geoserver/ign/wms"
                     filter="insee_dep NOT IN ('35')"
                     tooltip="false" tooltipenabled="false"
-                    attribution="IGN" 
+                    attribution="source : IGN" 
                     metadata="" 
                     metadata-csw="">
             </layer>
@@ -63,7 +63,7 @@
                     type="customlayer" style="" opacity="1" legendurl="img/invisible.png" 
                     url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/customlayers/zone.js" 
                     tooltip="false" tooltipenabled="false"
-                    attribution="Source: DDTM 35" 
+                    attribution="Source : DDTM 35" 
                     metadata="" 
                     metadata-csw="">
             </layer>
@@ -74,7 +74,7 @@
                     url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/customlayers/epci.js"
                     fields="nom_epci"
                     tooltip="true" tooltipenabled="false"
-                    attribution="Source: DDTM 35" 
+                    attribution="Source : DDTM 35" 
                     metadata="" 
                     metadata-csw="">
             </layer>
@@ -85,7 +85,7 @@
                     type="customlayer" style="" opacity="1" legendurl="img/invisible.png" 
                     url="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/customlayers/communes.js" 
                     tooltip="true" tooltipenabled="false"
-                    attribution="Source: DDTM 35" 
+                    attribution="Source : DDTM 35" 
                     metadata-csw="">
             </layer>	 
 
