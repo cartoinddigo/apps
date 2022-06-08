@@ -4,7 +4,7 @@
 
 {{#features}}
 <li class="item" id="{{feature_ol_uid}}"> 
-	<p>Commune de {{NOM_COM}}</p>
+	<p>Cellule appartenant à la commune de {{NOM_COM}}</p>
 	<div id = "bloc_centrer_bg">
 		<div>Cyclabilité : <br><span id="cyclab">{{cyclab}}</span>%</div>
 	</div>

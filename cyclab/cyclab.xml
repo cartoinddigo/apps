@@ -165,7 +165,7 @@
                 https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_amgt_cyclo.sld,
                 https://raw.githubusercontent.com/cartoinddigo/apps/main/cyclab/cyclab_files/sld/grd_relief.sld,"
                 stylesalias="
-                Pois de la population,
+                Poids de la population,
                 Secteurs d'emploi,
                 Aménagements cyclables existants,
                 Relief"
@@ -225,7 +225,7 @@
 
 
 
-        <theme name="Pour aller plus loin"  collapsed="true" id="illustratives_data" icon="fas fa-globe">
+        <theme name="Les données complémentaires"  collapsed="true" id="illustratives_data" icon="fas fa-globe">
 
             <layer id="ddtm35:cyclable_trafic_routier"
                 name="Trafic routier"
