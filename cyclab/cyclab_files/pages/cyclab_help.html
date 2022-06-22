@@ -1,9 +1,10 @@
 <img src="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/img/visuel.jpg" alt="" width="300" align="middle"/>
-<ul class="nav nav-tabs" role="tablist">    
-	<li role="presentation" class="active"><a href="#p1" aria-controls="profile" role="tab" data-toggle="tab">Bienvenue sur CycLab !</a></li>
-    <li role="presentation" ><a href="#p2" aria-controls="messages" role="tab" data-toggle="tab">Comment calculer la cyclabilité ?</a></li>
-    <li role="presentation" ><a href="#p3" aria-controls="profile" role="tab" data-toggle="tab">Comment pondérer les critères ?</a></li>
-    <li role="presentation" ><a href="#p4" aria-controls="settings" role="tab" data-toggle="tab">En savoir plus ?</a></li>
+<ul class="nav nav-tabs" role="tablist">
+	<li role="presentation" class="active"><a href="#p1" aria-controls="profile" role="tab" data-toggle="tab">Bienvenue !</a></li>
+    <li role="presentation" ><a href="#p2" aria-controls="messages" role="tab" data-toggle="tab">Calcul de la cyclabilité</a></li>
+    <li role="presentation" ><a href="#p3" aria-controls="profile" role="tab" data-toggle="tab">Pondération des critères</a></li>
+    <li role="presentation" ><a href="#p4" aria-controls="profile" role="tab" data-toggle="tab">Interprétation des résultats</a></li>
+    <li role="presentation" ><a href="#p5" aria-controls="settings" role="tab" data-toggle="tab">En savoir plus</a></li>
 </ul>
 
  <!-- Tab panes -->
@@ -14,7 +15,7 @@
 
         <p>Ce visualiseur vous donne la possibilité d’identifier des potentialités cyclables à l’échelle de l’Ille-et-Vilaine. La cyclabilité, s’entend comme la capacité d’un espace à générer une pratique du vélo, de part des caractéristiques géographiques, des lieux de vie et d’habitat, des aménagements mais aussi au regard des pratiques de mobilité des habitants.</p>
 
-        <p>En travaillant sur des déterminants, liés aux caractéristiques et au fonctionnement du territoire, l’indice de cyclabilité permet d’avoir une vision globale d’une pratique potentielle cyclable. Ainsi, la localisation des populations, des lieux de vie, de travail, de consommation, d’éducuation …, la présence d’obstacles naturels ou urbains, la présence d’infrastructures de transports ou cyclables, qui se matérialisent ici par des données en open-data - elles-mêmes hiérarchisées par une pondération - entrent dans le calcul de l’indice.</p>
+        <p>En travaillant sur des déterminants, liés aux caractéristiques et au fonctionnement du territoire, l’indice de cyclabilité permet d’avoir une vision globale d’une pratique potentielle cyclable. Afin de garantir les possibilités de mise à jour et de reproductibilité, ces déterminants sont collectés à partir de données publiques en open data.</p>
 
         <p>Une précaution d’usage : cet outil est perfectible. Des éléments prospectifs n’ont pas été intégrés et il manque peut-être une donnée qui vous apparaît essentiel pour analyser la cyclabilité. Et comme il est perfectible, on peut l’améliorer. N’hésitez pas à le manipuler, à vous interroger et surtout à nous faire part de vos questions et de vos remarques. Vous trouverez toutes les explications techniques dessus.<br>
         Alors, prêts ? Lancez-vous et utilisez-le !
@@ -22,49 +23,45 @@
 </div>
 <div id="p2" role="tabpanel" class="tab-pane">
 
-        <p>Le territoire est tout d’abord découpé en cellules hexagonales avec un pas de 800 m. les déterminants de la cyclabilité sont compilés et homogénéisés pour chacune des cellules de la grille.</p>
+        <p>Le territoire est tout d’abord découpé en cellules hexagonales avec un pas de 800 m. Les déterminants de la cyclabilité sont compilés et homogénéisés pour chacune des cellules de la grille.</p>
 
-        <p>Dans le cadre de cet indice, les critères déterminants susceptibles de générer des déplacements à vélo sont concernent la localisation de la population, la présence d’équipements, services, commerces, infrastructures de loisirs et tourisme. Les migrations pendulaires liés aux déplacements professionnels quotidiens entrent également dans le calcul. Enfin, les aménagements cyclables existants (quand ils sont connus) et le relief permettent d’affiner l’indice.</p>
+        <p>Les critères déterminants de cet indice sont la localisation de la population, la présence d’équipements, de services, de commerces, les infrastructures de loisirs et de tourisme. Les migrations pendulaires liés aux déplacements professionnels quotidiens entrent également dans le calcul. Enfin, les aménagements cyclables existants (quand ils sont connus) et le relief permettent de l’affiner.</p>
 
-        <p>La cyclabilité générée par ces déterminant est estimée de deux façon :
-<ul>
-    <li>par des périmètres de cyclabilité, avec la notion de polarité. Au sein de ces périmètres, la concentration des populations, des pôles générateurs de déplacement, et donc des flux, engendre un potentiel de recours au vélo élevé. On est en général sur des périmètres de quelques kilomètres de large. </li>
-    <li>par des linéaires, des liaisons. On retrouve cette traduction à toutes les échelles de travail. À l’échelle départementale, elle fait ressortir les liaisons interurbaines pertinentes, c’est-à-dire les liaisons entre polarités. </li>   
-</ul>
+        <p>La cyclabilité générée par ces déterminants est estimée de deux façons :
+        <ul>
+            <li>par des périmètres de cyclabilité, avec la notion de polarité. Au sein de ces périmètres, la concentration des populations, des pôles générateurs de déplacement, et donc des flux, engendre un potentiel de recours au vélo élevé. On est en général sur des périmètres de quelques kilomètres de large. </li>
+            <li>par des liaisons. On retrouve cette traduction à toutes les échelles de travail. À l’échelle départementale, elle fait ressortir les liaisons interurbaines pertinentes, c’est-à-dire les liaisons entre polarités. </li>   
+        </ul>
         </p>
-<img src="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/img/fig1.jpg" alt="" width="300" align="middle"/>
     </div>  
 
     <div id="p3" role="tabpanel" class="tab-pane">
-        <p>Pour chaque cellules, la cyclabilité est caractérisée selon plusieurs critères :</p>
-        <h5>Les déplacements à destination</h5>
-            <p>Il s'agit des motifs qui conduisent les usager à se déplacer à vélo vers une zone pour rallier des équipements et services. Ils sont intégrés dans l'algorithme par des recherches d'aires de chalandises.</p>
-            <p>Thématiques prises en compte :</p>
-            <ul>
-                <li>Les commerces alimentaires</li>
-                <li>Les commerces non alimentaires et services aux personnes</li>
-                <li>Les équipements d'enseignement</li>
-                <li>Les gares ferroviaires</li>
-                <li>Les équipements de loisirs et sportifs</li>
-                <li>Les équipements touristique</li>
-            </ul>
-        <h5>Les flux en transits</h5>
-            <p>Il s'agit de déplacements linéaires, faisant ressortir des liaisons interurbaines. Ils sont intégrés dans l'algorithme par des recherches d'itinéraires</p>
-            <p>Flux prises en compte :</p>
-            <ul>
-                <li>Les déplacements domestiques pour rallier un équipement non présent dans sa commune de résidence</li>
-                <li>Les déplacements entre les communes de domicile et les communes de travail</li>
-                <li>Le repport modal vers les gares</li>
-            </ul>
-        <h5>Les caractéristiques de l'environnement</h5>
-            <p>Il s'agit des caractéristiques sous jacentes du territoire qui vont favoriser ou entraver les capacité de déplacements à vélo. (répartition de la population, relief, aménagements cyclables existants...)</p>
+        <p>L’indice final est obtenu à partir d’une moyenne pondérée de l’ensemble des critères présents au droit d’une cellule. Il se traduit par une note exprimée en pourcentage pour chaque cellule de la grille. </p>
+
+        <p>Les pondérations sont de deux ordres : 
+<ul>
+    <li>Une première pondération réside dans le choix des bornes pour le calcul des aires d’influence, variables d’un type d’équipement à l’autre. Par exemple, l’attractivité d’une école primaire est estimée en fixant une distance maximale de 1.5 km autour de l’équipement ; pour un collège, la distance maximale fixée sera de 3 km. </li>
+    <li>Une seconde pondération fait intervenir la fréquence d’usage des différents types d’équipement. Il s’agit d’estimer le nombre de jours par semaine où les usagers se déplacent vers l’équipement. Par exemple, le coefficient de pondération pour un équipement scolaire sera de 5 (fréquentation de 5 jours par semaine) alors qu’il sera de 3 (3 jours par semaine) pour une grande surface.</li>
+</ul>
+        </p>
+<p>Vous pouvez retrouver le détail des bornes pour chaque type d’équipement ainsi que les coefficients de pondération dans la note méthodologique détaillée en cliquant ici : <a href="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/pages/note.pdf" style="text-decoration: underline">> Lire le document</a></p>
     </div>  
 
-
     <div id="p4" role="tabpanel" class="tab-pane">
-        <p>Si vous avez des questions, si vous souhaitez récupérer l’outil dans un autre format, ou si vous rencontrez des difficultés à le faire fonctionner, à interpréter les résultats n’hésitez pas à nous contactez-nous sur ddtm-echange-deplacement@ille-et-vilaine.gouv.fr.</p>
+        <p>Deux modes de représentation sont disponibles :
+<ul>
+    <li>Une visualisation globale, discrétisée en 10 classes d’intervalles égales. Cette représentation permet d’avoir une vision précise de l’indice à de grandes échelles.</li>
+    <li>Une visualisation potentielle, discrétisée en 4 classes raisonnées (méthode seuils naturels) pour une vison plus générale, à l’échelle du département.</li>
+</ul>
+
+        </p>
+        <p>Pour une interprétation plus poussée de l’indice, il est possible de cliquer sur une cellule pour en afficher les déterminants actifs. De plus, il est possible de superposer sur la carte des informations complémentaires (comme le trafic routier ou les aménagements cyclables existants) afin d’identifier par exemple les éventuels besoins d’aménagements.</p>     
+    </div> 
+
+    <div id="p5" role="tabpanel" class="tab-pane">
+        <p>Si vous avez des questions, si vous souhaitez récupérer l’outil dans un autre format, ou si vous rencontrez des difficultés à le faire fonctionner, à interpréter les résultats n’hésitez pas à nous contacter sur ddtm-echange-deplacement@ille-et-vilaine.gouv.fr.</p>
         <p>La note méthodologique détaillée est accessible en pdf : <br><a href="http://localhost/cyclabroot/mviewer/apps/cyclab/cyclab_files/pages/note.pdf" style="text-decoration: underline">> Lire le document</a></p>
-        <p>Enfin, un replay du webinaire de présentation, qui s’est tenu en avril 2022, vous permettra d’obtenir des explications sur son fonctionnement : <br><a href="https://youtu.be/oagWmfQWA3Y" style="text-decoration: underline">> Voir la vidéo</a> 
+        <p>Enfin, un replay du webinaire de présentation, qui s’est tenu en avril 2022, vous permettra d’obtenir des explications sur son fonctionnement : <br><a href="https://youtu.be/oagWmfQWA3Y" target="_blank" style="text-decoration: underline">> Voir la vidéo</a> 
         </p>      
     </div> 
 </div>

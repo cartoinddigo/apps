@@ -304,7 +304,7 @@
                     attribution="Source: DDTM 35" 
                     metadata="" 
                     metadata-csw="">
-            </layer> -->
+            </layer> 
             <layer id="ddtm35:cyclable_grille_800m"
                 name="Grille (données brutes)"
                 exclusive="false"
@@ -321,7 +321,7 @@
                 attribution="Source: DDTM 35"
                 metadata=""
                 metadata-csw="">
-            </layer>
+            </layer>-->
         </theme>
 
     </themes>

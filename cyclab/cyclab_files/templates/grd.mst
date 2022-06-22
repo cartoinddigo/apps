@@ -4,9 +4,9 @@
 
 {{#features}}
 <li class="item" id="{{feature_ol_uid}}"> 
-	<h3>Commune de {{NOM_COM}}</h3>
+	<h3 style="text-align:center">Cellule appartenant à la commune de {{NOM_COM}}</h3>
 	<div id = "bloc_centrer_bg">
-		<div>Cyclabilité de la cellule : <br><span id="cyclab">{{cyclab}}</span>%</div>
+		<div>Cyclabilité : <br><span id="cyclab">{{cyclab}}</span>%</div>
 	</div>
 	<h3 id="contexte">Context {{TypCom}}</h3>
 	<ul>
@@ -42,11 +42,20 @@ function legende_picto() {
   mviewer.popupPhoto($(this).attr("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.pwOp47qON8UGh4dshLHjaAHaFa%26pid%3DApi&f=1"))
 }
 
-
-document.getElementById("cyclab").innerHTML = Math.round((Math.round((document.getElementById("cyclab").innerHTML) * 100) / 100)*100);
-
-
 {{#features}}
+let res = Math.round((Math.round(({{cyclab}}) * 100) / 100)*100)
+if (res >= 100) {
+	document.getElementById("cyclab").innerHTML = '100'
+}
+
+if (res < 100) {
+	document.getElementById("cyclab").innerHTML = res
+}
+
+// document.getElementById("cyclab").innerHTML = Math.round((Math.round(({{cyclab}}) * 100) / 100)*100);
+
+
+
 
 // MOTIFS DE DEPLACEMENTS
 if ({{c_alim}}+ {{c_commerc}} + {{c_enseigne}} + {{c_loisirs}} + {{c_touisme}} + {{c_transpor}} >= 1) {
